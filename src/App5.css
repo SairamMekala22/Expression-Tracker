@@ -1,0 +1,191 @@
+/* App5.css */
+body,
+.App5 {
+    width: 300px;
+    /* Set a fixed width */
+    overflow-x: scroll;
+    /* Adds horizontal scroll */
+    white-space: nowrap;
+    /* Prevents text wrap for horizontal scrolling */
+    height: 100vh;
+    width: 200vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    /* background-image: url('.././public/Components/bg.jpg'); */
+    /* background-size: cover; */
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.App5::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Title Styling */
+.title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    opacity: 0.85;
+    border-radius: 2%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.title:hover {
+    color: #fff;
+    background-color: #000;
+    transform: translateX(-50%) translateY(-5px);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Box styling */
+.box {
+    width: 300px;
+    left: 30px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px double #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.box img {
+    width: 80%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.left-container {
+    width: 300px;
+    height: 280px;
+    top: 1px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px double #000;
+  background-color: #fff;
+  /* cursor: pointer; */
+    transition: all 0.5s ease;
+    position: relative;
+    /* overflow: hidden;
+  box-sizing: border-box; */
+    z-index: 1;
+}
+
+.right-container {
+  position: relative;
+  width: 90%;            /* Adjust width as needed */
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  transform: translate(150px, -350px); /* Moves boxes right and up */
+  box-sizing: border-box;
+  width: 80%;          /* Reduce width to fit better on the screen */
+  max-width: 500px;    /* Set a maximum width for larger screens */
+  padding: 10px;       /* Reduce padding to make the container smaller */
+  margin: 0 auto;
+}
+
+.box .name {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.box:hover .name {
+    color: #5b584c;
+    transform: translateY(-5px);
+}
+#box1,#box2,#box3{
+    width:150px;
+    height:150px;
+    left:340px;
+    top:400px;
+  }
+  #box4{
+    width:150px;
+    height:150px;
+    top:200px;
+  }
+
+/* Border classes */
+.green-border {
+    border: 9px solid green;
+}
+
+.red-border-no-transition {
+    border: 3px solid red;
+    transition: none;
+}
+
+.disappear {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* Points and Next Button Styling */
+.points,
+.next {
+    position: fixed;
+    bottom: 35px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.points {
+    left: 30%;
+}
+
+.next {
+    left: 56%;
+}
