@@ -81,5 +81,8 @@ plt.axis("equal")
 
 plt.title("Frequency of Detected Emotions over 15 seconds")
 plt.legend(emotion_labels, loc="center left", bbox_to_anchor=(1, 0.5))
+plt.savefig('plot.png')  # Saves as PNG by default
 
+# Optional: Specify DPI for resolution, format, and transparent background
+plt.savefig('plot_high_res.png', dpi=300, format='png', transparent=True)
 plt.show()
