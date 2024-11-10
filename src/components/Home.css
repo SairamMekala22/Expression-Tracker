@@ -1,0 +1,99 @@
+/* Example CSS to ensure full width */
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #007BFF;
+  color: black;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.section-container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  color: black;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+.car-status .car-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-container {
+  text-align: left;
+}
+
+.music-control .music-buttons .indicator-status {
+  display: flex;
+  justify-content: center;
+  color:black;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+.items{
+  align-items: center;
+  justify-content: center;
+}
+.home{
+  align-items: center;
+  justify-content: center;
+}

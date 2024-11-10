@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1d, #0d0d13);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/* Container */
+.login {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 30px 40px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 17vh;
+    margin-left: 80vh;
+    justify-content: center;
+}
+
+.form h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+.form p,
+.form a {
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.form a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+/* General Body Style (applies to all pages) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1d, #0d0d13);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Home Page Container */
+.home {
+    background-color: #111;
+    border-radius: 12px;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.home h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+Feature Section
+ .feature {
+    margin: 20px 0;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ccc;
+}  */
+
+/* Feature Buttons */
+button {
+    width: 160px;
+    padding: 12px;
+    margin: 10px 5px;
+    background-color: #246b7b;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#leftbutton{
+    background-color: #28a745;
+}
+#leftbutton.Off{
+    background-color: red;
+}
+/* button:hover {
+    background-color: #218838;
+} */
+
+button:focus {
+    outline: none;
+    border: 1px solid #28a745;
+}
+
+button:active {
+    transform: scale(0.90);
+}
+
+/* Special Button Styles for 'On' and 'Off' States */
+button.On {
+    background-color: #007bff;
+}
+
+button.Off {
+    background-color: #6c757d;
+}  
+
+/* Responsive Design for Mobile */
+ /* @media (max-width: 768px) {
+    .home {
+        width: 90%;
+        padding: 30px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}  */
