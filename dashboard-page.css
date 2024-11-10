@@ -1,0 +1,168 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap');
+
+/* Font Face */
+@font-face { 
+    font-family: roboto-regular; 
+    src: url('../font/Roboto-Regular.ttf'); 
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(45deg, #56CCF2, #2F80ED);
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+/* Navigation Items */
+#navItem1, #navItem2, #navItem3, #navItem4 {
+    color: #323f4b;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+/* Dashboard Header */
+.dashboard-style {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Sour Gummy', sans-serif;
+    color: #FFD700;
+    text-shadow: 0px 0px 5px #00E5FF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Subheading */
+.dashboard-style2 {
+    font-size: 22px;
+    color: #00E5FF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.lock-btn, .update-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lock-btn:hover, .update-btn:hover {
+    background-color: #4577a6;
+    transform: translateY(-3px);
+}
+
+/* Content Boxes */
+.box, .recent-activity {
+    width: 45%;
+    background: #fff;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    border: 2px solid black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, background-color 0.2s;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Box Hover Effect */
+.box:hover, .recent-activity:hover {
+    background-color: #E6F4FA;
+    color: rgba(0, 42, 101, 0.954);
+    transform: translateY(-5px);
+}
+
+/* Button Inside Content Box */
+.play {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 130px;
+    background: linear-gradient(90deg, #F2994A, #F2C94C);
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Play Button Hover */
+.play:hover {
+    background: linear-gradient(90deg, #F2994A, #EB5757);
+    box-shadow: 0 0 20px rgba(255, 0, 150, 0.4), 0 0 30px rgba(255, 0, 150, 0.3);
+    transform: scale(1.05);
+}
+
+/* Separator Background with Animation */
+.seperator {
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+    padding: 20px;
+    min-height: 100vh;
+    animation: gradientShift 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+/* Animated Gradient Shift */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* General Text */
+.access {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #323f4b;
+    text-align: center;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Utility for Hidden Lock State */
+#unlock {
+    display: none;
+}
+
+#lock {
+    display: inline;
+}
+
+/* Back Button Hover */
+.back:hover {
+    background-color: #4577a6;
+}
